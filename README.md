@@ -1,7 +1,9 @@
 # MacBook Only codes
-### WARNING! Use at your own risk
+## WARNING! Use at your own risk
 Thing.app.zip: 
+Its just a fake hacking portal
 
+math.app.zip: 
 
 
 
