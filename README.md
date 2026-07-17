@@ -1,11 +1,12 @@
 # MacBook Only codes
 ## WARNING! Use at your own risk
-Thing.app.zip: 
+
+### Thing.app.zip:
 Its just a fake hacking portal
 
-math.app.zip: 
-
-
+### math.app.zip: 
+It forces you to do math forever restarting and stuting down wont stop it.
+you can close it by typing "please" in the answer bar
 
 ### How to use:
 download the file and unzip it, then open it it will probably say something
