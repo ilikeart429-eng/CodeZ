@@ -14,3 +14,4 @@ like "Thing.app couldn't be opened" if so go to system settings, click privacy &
 then scroll to the bottom and there should be a notification like "Thing.app couldn't be 
 opened" if it says that click open anyway and it should work!
 
+### For the bookmarklets
