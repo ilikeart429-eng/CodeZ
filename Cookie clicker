@@ -1,0 +1,56 @@
+// ==UserScript==
+// @name         Cookie Clicker Auto Everything (Fast)
+// @namespace    http://tampermonkey.net/
+// @version      1.3
+// @description  Automates everything in Cookie Clicker at maximum speed
+// @author       Doug
+// @match        *://orteil.dashnet.org/cookieclicker/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+'use strict';
+
+// Number of clicks fired per interval tick. Raise this for more clicks/sec,
+// but very high values can spike CPU usage without much extra benefit.
+const CLICKS_PER_TICK = 100;
+const TICK_INTERVAL_MS = 16; // ~60 ticks/sec, each firing CLICKS_PER_TICK clicks
+
+function clickCookie() {
+    const bigCookie = document.getElementById("bigCookie");
+    if (!bigCookie) return;
+    for (let i = 0; i < CLICKS_PER_TICK; i++) {
+        bigCookie.click();
+    }
+}
+
+function buyUpgrades() {
+    if (Game.cookies >= 120000) {
+        let upgrades = document.getElementsByClassName("upgrade enabled");
+        for (let upgrade of upgrades) {
+            upgrade.click();
+        }
+    }
+}
+
+function buyBuildings() {
+    if (Game.cookies >= 120000) {
+        let buildings = document.getElementsByClassName("product unlocked enabled");
+        for (let building of buildings) {
+            building.click();
+        }
+    }
+}
+
+function clickGoldenCookies() {
+    let goldenCookies = document.getElementsByClassName("shimmer");
+    for (let cookie of goldenCookies) {
+        cookie.click();
+    }
+}
+
+setInterval(clickCookie, TICK_INTERVAL_MS); // high-speed batched clicking
+setInterval(buyUpgrades, 1000);
+setInterval(buyBuildings, 500);
+setInterval(clickGoldenCookies, 100);
+})();
