@@ -15,3 +15,5 @@ then scroll to the bottom and there should be a notification like "Thing.app cou
 opened" if it says that click open anyway and it should work!
 
 ### For the bookmarklets
+copy the code open bookmarks, click add current tab. 
+hover over it and click the three dots then edit, in the url paste the code. (you can give it a new name)
