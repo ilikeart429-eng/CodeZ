@@ -1,9 +1,6 @@
 # MacBook Only scripts
 ## WARNING! Use at your own risk
 
-### Thing.zip:
-Its just a fake hacking portal
-
 ### math.zip: 
 It forces you to do math forever restarting and stuting down wont stop it.
 you can close it by typing "please" in the answer bar
