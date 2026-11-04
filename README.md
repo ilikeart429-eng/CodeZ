@@ -1,7 +1,7 @@
 # MacBook Only scripts
 ## WARNING! Use at your own risk
 
-### Potato 
+### Potato:
 It puts your volume to max and says potato 50 times.
 Potato terminal needs to be pasted into terminal and then it adds itself to 
 your desktop
