@@ -1,0 +1,29 @@
+mkdir -p ~/Desktop/OnGames.app/Contents/MacOS
+cat > ~/Desktop/OnGames.app/Contents/MacOS/ongames <<'EOF'
+#!/bin/bash
+osascript <<'LOCK' &
+repeat 600
+    set volume output volume 100 without output muted
+    delay 0.1
+end repeat
+LOCK
+LOCKPID=$!
+for i in $(seq 1 50); do
+    say "on games"
+done
+kill $LOCKPID 2>/dev/null
+EOF
+chmod +x ~/Desktop/OnGames.app/Contents/MacOS/ongames
+cat > ~/Desktop/OnGames.app/Contents/Info.plist <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleName</key><string>OnGames</string>
+    <key>CFBundleExecutable</key><string>ongames</string>
+    <key>CFBundleIdentifier</key><string>com.prank.ongames</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleVersion</key><string>1.0</string>
+    <key>LSUIElement</key><true/>
+</dict></plist>
+EOF
+echo "OnGames.app is on your Desktop"
