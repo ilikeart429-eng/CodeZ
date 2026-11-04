@@ -1,4 +1,4 @@
-# MacBook Only codes
+# MacBook Only scripts
 ## WARNING! Use at your own risk
 
 ### Thing.zip:
