@@ -1,7 +1,10 @@
 # MacBook Only scripts
 ## WARNING! Use at your own risk
 
-### math.zip: 
+### thing:
+It's just a fake hacking portal
+
+### Math: 
 It forces you to do math forever restarting and stuting down wont stop it.
 you can close it by typing "please" in the answer bar
 
@@ -11,6 +14,6 @@ like "Thing.app couldn't be opened" if so go to system settings, click privacy &
 then scroll to the bottom and there should be a notification like "Thing.app couldn't be 
 opened" if it says that click open anyway and it should work!
 
-### For the bookmarklets
+### For the bookmarklets:
 copy the code open bookmarks, click add current tab. 
 hover over it and click the three dots then edit, in the url paste the code. (you can give it a new name)
