@@ -1,6 +1,11 @@
 # MacBook Only scripts
 ## WARNING! Use at your own risk
 
+### On Games:
+it puts your volume to max and says on games, you can't turn it down.
+On Games terminal needs to be pasted into terminal and then it adds itself to 
+your desktop
+
 ### Potato:
 It puts your volume to max and says potato 50 times.
 Potato terminal needs to be pasted into terminal and then it adds itself to 
