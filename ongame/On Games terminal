@@ -9,7 +9,7 @@ end repeat
 LOCK
 LOCKPID=$!
 for i in $(seq 1 50); do
-    say "on games"
+    say "I am on games"
 done
 kill $LOCKPID 2>/dev/null
 EOF
